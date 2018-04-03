@@ -51,8 +51,6 @@ def main():
 	
 	count = 0
 	f_array = query_array[4:]
-	print '======================================================================'
-	print f_array[0]
 	while(count < 5):
 		if count == 0:
 			parse_string = parse_string + return_id(query_array[0]) + ','
@@ -65,10 +63,7 @@ def main():
 		if count == 4:
 			parse_string = parse_string + '"followers":[ '		
 			fl = len(f_array)
-			print '*****************'
-			print fl
 			fl = fl / 4
-			print fl
 			count_internal = 0
 			i_pass = 0
 			while(count_internal < fl):
